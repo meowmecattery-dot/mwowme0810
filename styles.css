@@ -80,7 +80,6 @@ main {
   order: 9;
 }
 
-html[data-page="home"] #about,
 html[data-page="home"] #support,
 html[data-page="home"] #kittens,
 html[data-page="home"] #siamese,
@@ -336,10 +335,21 @@ h3 {
 }
 
 .hero-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
   margin-bottom: 18px;
   color: var(--rose);
   font-size: 2.2rem;
   font-weight: 800;
+}
+
+.hero-kicker small {
+  color: var(--muted);
+  font-size: 0.48em;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .hero-credentials {
@@ -367,7 +377,19 @@ h3 {
 }
 
 .hero-license {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
   color: var(--rose);
+}
+
+.hero-license small {
+  flex: 1 1 260px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .hero-text,
