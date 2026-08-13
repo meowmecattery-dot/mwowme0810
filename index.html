@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Meow Me Cattery | 香港暹羅貓專門店</title>
+    <title>Meow Me Cattery｜香港首間暹羅貓專門店</title>
     <meta
       name="description"
       content="Meow Me Cattery 是位於香港西營盤的暹羅貓專門店，分享暹羅幼貓、日常成長記錄與家長飼養故事。"
     />
-    <meta property="og:title" content="Meow Me Cattery | 香港暹羅貓專門店" />
+    <meta property="og:title" content="Meow Me Cattery｜香港首間暹羅貓專門店" />
     <meta
       property="og:description"
       content="香港暹羅貓專門店。歡迎 WhatsApp 預約了解幼貓近況及到店查詢。"
@@ -18,7 +18,7 @@
     <script>
       document.documentElement.dataset.page = new URLSearchParams(window.location.search).get("page") || "home";
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260724-medical2" />
+    <link rel="stylesheet" href="styles.css?v=20260813-carebelow" />
     <style>
       .product-card {
         min-height: 0;
@@ -144,12 +144,14 @@
         <svg><use href="#icon-menu" /></svg>
       </button>
       <nav id="site-menu" class="site-nav" aria-label="主要導覽">
-        <a href="index.html?page=about">關於我們</a>
-        <a href="index.html?page=support">保障與支援</a>
+        <a href="index.html?page=about">品牌故事</a>
+        <a href="index.html?page=support">最強安心保障</a>
+        <a href="index.html?page=kittens">現有貓貓</a>
+        <a href="index.html?page=siamese">暹羅貓花色圖鑑</a>
+        <a href="index.html#instagram">IG貓舍日常</a>
         <a href="index.html?page=grooming">寵物美容</a>
-        <a href="index.html?page=shop">家長專區</a>
-        <a href="index.html#instagram">IG 日常</a>
-        <a href="index.html#contact">聯絡</a>
+        <a href="index.html?page=parents">家長專區</a>
+        <a href="index.html#contact">預約探訪</a>
       </nav>
       <button class="cart-open" type="button" data-open-cart aria-label="開啟購物車">
         <svg><use href="#icon-cart" /></svg>
@@ -159,16 +161,17 @@
 
     <main id="home">
       <section class="hero" aria-labelledby="hero-title">
-        <video class="hero-video" controls loop playsinline preload="metadata" poster="assets/meowme-brand.jpeg" aria-label="Meow Me Cattery 影片">
-          <source src="videos/hero-logo.mp4" type="video/mp4" />
-        </video>
+        <img class="hero-logo" src="assets/hero-cattery-room.jpg" alt="Meow Me Cattery 貓舍環境" />
         <div class="hero-copy">
-          <p class="eyebrow">香港CFA、TICA 得獎精緻暹羅貓專門店 · Hong Kong Brand Since 2021</p>
           <h1 id="hero-title"><span>Meow Me</span><span>Cattery</span></h1>
-          <p class="hero-kicker">香港暹羅貓專門店</p>
+          <p class="hero-kicker">香港首間暹羅貓專門店</p>
+          <div class="hero-credentials" aria-label="Meow Me Cattery 認證與牌照資料">
+            <p>全港首間專營暹羅貓專門店｜首間通過基因檢測繁育｜獨有獸醫團隊終身保障｜CFA/TICA <strong>雙認證</strong></p>
+            <p class="hero-license">漁護署牌照號碼：110260</p>
+          </div>
           <p class="hero-text">
-            貓舍以純白、嚴苛潔淨嘅空間，用愛守護每隻精緻暹羅貓嘅誕生。<br /><br />
-            由出世起嘅成長紀錄、權威基因檢測報告，到 365 日合約保障與終身醫療支援──我哋用最嚴謹嘅專業，將呢份捧在手心嘅溫暖，優雅地融入你溫馨嘅家。
+            每一隻小貓，都係我哋用盡全力去愛同照顧嘅家人。<br /><br />
+            喺純白、極致乾淨嘅家庭同貓舍環境入面，我哋用最嚴苛嘅衛生標準同滿滿嘅愛，陪住每一隻精緻暹羅貓健康長大。由出世嗰刻嘅成長記錄、權威基因檢測，到 365 日健康保障同終身醫療支援——我哋用最嚴謹嘅專業、最溫柔嘅心，將呢份捧喺手心嘅溫暖，安全送到你嘅身邊。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="https://wa.me/85261575928" target="_blank" rel="noopener">
@@ -194,6 +197,52 @@
               <dd>西營盤皇后大道西353號地下2號舖</dd>
             </div>
           </dl>
+        </div>
+      </section>
+
+      <section id="kittens" class="section kittens-band" aria-labelledby="kittens-title">
+        <div class="section-inner kittens-heading">
+          <div>
+            <p class="eyebrow">Available Cats</p>
+            <h2 id="kittens-title">用心陪伴成長，只為遇見命中注定的家人。</h2>
+            <p class="lead">
+              每一隻暹羅貓 BB，都是在奶媽懷裡被愛意與呵護撫養長大。他們帶著對人類最純粹的信任，在這裡不是等待被挑選，而是命中注定的雙向奔赴。
+            </p>
+          </div>
+        </div>
+
+        <div class="section-inner kitten-card-grid" aria-label="現有貓貓海報">
+          <article class="kitten-card">
+            <figure>
+              <img src="assets/kittens/available-boy-playful.jpg" alt="海豹色暹羅男孩海報" loading="lazy" />
+            </figure>
+            <a class="button primary kitten-whatsapp" href="https://wa.me/85261575928?text=%F0%9F%92%AC%20%E6%9C%89%E8%88%88%E8%B6%A3%EF%BC%81%E6%83%B3%E9%A0%90%E7%B4%84%E4%BA%86%E8%A7%A3%E5%91%A2%E9%9A%BBBB%EF%BC%9A%E6%B5%B7%E8%B1%B9%E8%89%B2%E6%9A%B9%E7%BE%85%E7%94%B7%E5%AD%A9%EF%BC%88%E7%94%9F%E6%97%A5%EF%BC%9A3-5-2026%EF%BC%8C%E7%89%B9%E8%89%B2%EF%BC%9A%E8%B6%85%E6%B7%B1%E8%97%8D%E7%9C%BC%EF%BC%8C%E6%80%A7%E6%A0%BC%EF%BC%9A%E6%B4%BB%E6%BD%91%E5%A5%BD%E5%8B%95%E3%80%81%E8%B2%AA%E7%8E%A9%EF%BC%89" target="_blank" rel="noopener">
+              💬 有興趣！想預約了解呢隻BB
+            </a>
+          </article>
+          <article class="kitten-card">
+            <figure>
+              <img src="assets/kittens/available-boy-gentle.jpg" alt="海豹色暹羅男孩海報" loading="lazy" />
+            </figure>
+            <a class="button primary kitten-whatsapp" href="https://wa.me/85261575928?text=%F0%9F%92%AC%20%E6%9C%89%E8%88%88%E8%B6%A3%EF%BC%81%E6%83%B3%E9%A0%90%E7%B4%84%E4%BA%86%E8%A7%A3%E5%91%A2%E9%9A%BBBB%EF%BC%9A%E6%B5%B7%E8%B1%B9%E8%89%B2%E6%9A%B9%E7%BE%85%E7%94%B7%E5%AD%A9%EF%BC%88%E7%94%9F%E6%97%A5%EF%BC%9A3-5-2026%EF%BC%8C%E6%80%A7%E6%A0%BC%EF%BC%9A%E4%B9%96%E5%B7%A7%E6%96%AF%E6%96%87%E3%80%81%E5%A4%A7%E9%A3%9F%EF%BC%8C%E8%A6%AA%E4%BA%BA%E6%BA%AB%E5%92%8C%E3%80%81%E5%96%9C%E6%AD%A1%E9%99%AA%E4%BC%B4%EF%BC%89" target="_blank" rel="noopener">
+              💬 有興趣！想預約了解呢隻BB
+            </a>
+          </article>
+          <article class="kitten-card">
+            <figure>
+              <img src="assets/kittens/available-little-blue.jpg" alt="小藍暹羅貓海報" loading="lazy" />
+            </figure>
+            <a class="button primary kitten-whatsapp" href="https://wa.me/85261575928?text=%F0%9F%92%AC%20%E6%9C%89%E8%88%88%E8%B6%A3%EF%BC%81%E6%83%B3%E9%A0%90%E7%B4%84%E4%BA%86%E8%A7%A3%E5%B0%8F%E8%97%8DBB%EF%BC%9A%E5%A5%B3%E4%BB%94%EF%BC%8F%E8%97%8D%E9%87%8D%E9%BB%9E%E8%89%B2%EF%BC%88%E7%94%9F%E6%97%A5%EF%BC%9A3-5-2026%EF%BC%8C%E6%80%A7%E6%A0%BC%EF%BC%9A%E6%B4%BB%E6%BD%91%E5%A5%BD%E5%A5%87%E3%80%81%E8%A6%AA%E4%BA%BA%E9%BB%8F%E8%BA%AB%EF%BC%89" target="_blank" rel="noopener">
+              💬 有興趣！想預約了解呢隻BB
+            </a>
+          </article>
+        </div>
+
+        <div class="section-inner kittens-care-panel">
+          <p class="eyebrow">Daily Care</p>
+          <h3>日常照顧</h3>
+          <p>主要糧食包括新鮮鮮食、比利時天然乾糧、汪喵星球品牌凍乾、罐罐及每日額外 supplements。</p>
+          <p>本舍每日使用獸醫診所專用 TH4 清潔消毒。</p>
         </div>
       </section>
 
@@ -247,75 +296,247 @@
       <section id="about" class="section intro-band">
         <div class="section-inner about-hero-grid compact-about">
           <div class="about-hero-copy">
-            <p class="eyebrow">About Meow Me</p>
-            <h2>關於 Meow Me Cattery</h2>
+            <p class="eyebrow">品牌故事</p>
+            <h2>《因為極致喜愛，所以一輩子專注》</h2>
+            <p class="about-story-subtitle">── 奶媽的故事</p>
             <p class="lead">
-              本貓舍由 2021 年開業至今，主要繁殖暹羅貓，致力幫家長搵到健康、心儀、性格親人的貓貓。
+              因為奶媽由細到大，都對藍眼睛同極度痴人嘅性格情有獨鍾。正係呢份純粹，令我哋成為全港唯一專注繁育暹羅貓嘅專門店。
             </p>
             <p>
-              我哋重視透明溝通、健康報告、社會化訓練及接貓後支援。家長可以排隊等待幼貓出生，亦可預約親身了解現貓狀況。
+              每一隻BB 都喺純白乾淨嘅環境入面，由我親手接生、親自餵奶長大。
+            </p>
+            <p>
+              「愛佢哋，自然想比最好嘅保護佢哋。」
+            </p>
+            <p>
+              開業後，不停進步考獲不同證書。
+            </p>
+            <p>
+              時間與證書，從不說謊。我哋所有用心諗出嚟嘅做法，全因一心一意為貓貓好，自然在每個細節上，為佢哋走得更前。
+            </p>
+            <p>
+              我哋好期待幫你搵到命中注定嘅暹羅伴侶，成為你哋一世最可靠嘅後盾 ❤️
             </p>
           </div>
-          <figure class="about-feature-photo">
-            <img src="assets/about-cat-dress.jpeg" alt="Meow Me Cattery 暹羅貓穿著粉色衣服" />
+          <figure class="about-mama-photo">
+            <img src="assets/about/mama-story-photo.jpg" alt="Meow Me Cattery 奶媽與暹羅貓" />
           </figure>
         </div>
 
-        <div class="section-inner about-story-grid">
-          <article class="about-story-card">
-            <span class="value-number">01</span>
-            <h3>24/7 成長更新</h3>
-            <p>奶媽會主動與家長保持聯繫，分享貓貓身體狀況、日常互動及成長片段。</p>
-          </article>
-          <article class="about-story-card">
-            <span class="value-number">02</span>
-            <h3>接貓前健康檢查</h3>
-            <p>接貓前可與家長一同到獸醫診所檢查，確保貓貓健康帶回家。</p>
-          </article>
-          <article class="about-story-card">
-            <span class="value-number">03</span>
-            <h3>社會化訓練</h3>
-            <p>每隻貓貓從小由本舍用心陪育，熟習人類互動，回家時更親和穩定。</p>
-          </article>
-        </div>
-
-        <div class="section-inner about-photo-grid" aria-label="Meow Me Cattery 活動及貓舍照片">
-          <img src="assets/about-booth-wide.jpeg" alt="Meow Me Cattery 展覽攤位" />
-          <img src="assets/about-booth-front.jpeg" alt="Meow Me Cattery 展覽攤位正面" />
-          <img src="assets/about-market-table.jpeg" alt="Meow Me Cattery 商品及宣傳展示" />
-        </div>
-
-        <div class="section-inner about-info-panel">
-          <div>
-            <p class="eyebrow">Siamese Colors</p>
-            <h3>暹羅色系</h3>
-            <p>海豹、藍重點、紫重點、朱古力、虎斑。純種基因、父母可見、成長片段。</p>
-          </div>
-          <div class="about-list">
-            <p>剛出生幼貓及現貓接受排隊及預訂</p>
-            <p>365 天健康保障</p>
-            <p>免費獸醫健康檢查</p>
-            <p>3 針疫苗及晶片</p>
-            <p>體內外杜蟲、滴蝨、耳腔清潔</p>
-            <p>24 小時售後指導，幫助新手家長</p>
-            <p>預訂貓貓狀況每日更新</p>
-          </div>
-        </div>
-
-        <div class="section-inner about-info-panel about-science">
-          <div>
-            <p class="eyebrow">Daily Care</p>
-            <h3>日常照顧</h3>
-            <p>主要糧食包括新鮮鮮食、比利時天然乾糧、汪喵星球凍乾、罐罐及每日額外 supplements。</p>
-            <p>本舍每日使用獸醫診所專用 TH4 清潔消毒。</p>
-          </div>
-          <div>
-            <p class="eyebrow">Genetic Testing</p>
-            <h3>全港首間科學繁殖暹羅貓</h3>
+        <div class="section-inner about-media-section">
+          <div class="about-media-heading">
+            <p class="eyebrow">Media Features</p>
+            <h3>媒體訪問及報道</h3>
             <p>
-              爸爸媽媽全部通過基因檢測，以香港化驗所報告及數據，配合科學方法繁殖健康暹羅貓，減低潛在遺傳病風險。
+              感謝 Channel C 同 HolidaySmart 的訪問及報道，讓更多家長認識 Meow Me Cattery 對暹羅貓繁育、健康把關及日常照顧的堅持。每一次被看見，都是推動我哋繼續用心做好每個細節的珍貴鼓勵。
             </p>
           </div>
+          <div class="about-media-grid" aria-label="Meow Me Cattery 媒體訪問及報道照片">
+            <figure class="about-media-card about-media-card-main">
+              <img src="assets/about-cat-dress.jpeg" alt="Meow Me Cattery 暹羅貓接受媒體訪問" />
+              <figcaption>展會現場媒體訪問花絮</figcaption>
+            </figure>
+            <figure class="about-media-card">
+              <img src="assets/about/channelc-interview.jpg" alt="Channel C 訪問 Meow Me Cattery 暹羅貓" />
+              <figcaption>Channel C 現場訪問</figcaption>
+            </figure>
+            <figure class="about-media-card">
+              <img src="assets/about/holidaysmart-report.jpg" alt="HolidaySmart 寵物展報道 Meow Me Cattery 暹羅貓" />
+              <figcaption>HolidaySmart 寵物展報道</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="section-inner about-exhibition-section">
+          <div class="about-exhibition-heading">
+            <h3>展覽足跡：品質與信譽的見證</h3>
+          </div>
+          <div class="about-photo-grid" aria-label="Meow Me Cattery 活動及貓舍照片">
+            <img src="assets/about-booth-wide.jpeg" alt="Meow Me Cattery 展覽攤位" />
+            <img src="assets/about-booth-front.jpeg" alt="Meow Me Cattery 展覽攤位正面" />
+            <img src="assets/about-market-table.jpeg" alt="Meow Me Cattery 商品及宣傳展示" />
+          </div>
+          <p class="about-photo-caption">
+            從貓舍到大型寵物展，我們帶著對血統與健康的堅持走到台前。豐富的參展經歷，不僅讓我們收穫了廣大貓友的喜愛與認可，每一次與大家面對面的交流，都是我們精益求精的動力。感謝眾多貓奴家長的的信任與支持，讓 Meow Me Cattery 成為大家心中值得信賴的專業品牌選擇。
+          </p>
+        </div>
+
+      </section>
+
+      <section id="siamese" class="section siamese-band" aria-labelledby="siamese-color-guide-title">
+        <div class="section-inner color-guide-hero">
+          <p class="eyebrow">SIAMESE ELITE COLOR GUIDE</p>
+          <h2 id="siamese-color-guide-title">🎨 探索與眾不同的優雅色彩</h2>
+          <p class="lead">
+            每一隻暹羅貓都是大自然的藝術品 ❤️ 由最經典的海豹色、高冷優雅的藍重點，到野性萌酷的虎斑、溫暖甜美的朱古力色與極致優雅的紫重點色。這裏帶你輕鬆認識每一種花色背後的小故事，找到那抹讓你一見鍾情的色彩！
+          </p>
+        </div>
+
+        <nav class="section-inner color-tab-bar" aria-label="暹羅貓花色快速導航">
+          <a href="#seal-point">🤎 海豹色 Seal</a>
+          <a href="#blue-point">💙 藍重點 Blue</a>
+          <a href="#lilac-point">💜 紫重點 Lilac</a>
+          <a href="#tabby-point">🐯 虎斑色 Tabby</a>
+          <a href="#chocolate-point">🍫 朱古力 Choco</a>
+        </nav>
+
+        <aside class="section-inner color-fact-card" aria-labelledby="temperature-magic-title">
+          <span class="color-fact-icon" aria-hidden="true">💡</span>
+          <div>
+            <p class="eyebrow">溫感魔法小知識</p>
+            <h3 id="temperature-magic-title">為什麼暹羅貓會「變色」？</h3>
+            <p>
+              暹羅貓體內帶有特殊的「溫度感應基因」！天氣冷或體溫較低的部位（如臉部、耳朵、四肢和尾巴）顏色會變深；天氣熱時毛色則會變淺。養一隻暹羅貓，就像養了一隻會隨季節變色的小變色龍，非常神奇！
+            </p>
+          </div>
+        </aside>
+
+        <div class="section-inner color-guide-grid">
+          <article id="seal-point" class="color-guide-card color-card-seal">
+            <div class="color-card-top">
+              <span class="color-index">01</span>
+              <span class="color-swatch" aria-hidden="true"></span>
+            </div>
+            <figure class="color-photo">
+              <img src="assets/siamese/seal-point.jpg" alt="海豹色暹羅貓" loading="eager" />
+            </figure>
+            <h3>🤎 海豹色 Seal Point</h3>
+            <p class="color-card-subtitle">經典高貴的原始色系</p>
+            <dl class="color-detail-list">
+              <div>
+                <dt>一句話介紹</dt>
+                <dd>最經典、最深情的原始暹羅色！</dd>
+              </div>
+              <div>
+                <dt>視覺特徵</dt>
+                <dd>身體呈現溫暖的奶油白，臉部、耳朵、四肢與尾巴覆蓋著深棕黑色的「黑巧克力」色塊，與寶石藍眼睛形成最震撼的經典對比。</dd>
+              </div>
+              <div>
+                <dt>肉墊與鼻頭</dt>
+                <dd>深褐色或黑色。</dd>
+              </div>
+              <div>
+                <dt>幼貓小秘密</dt>
+                <dd>剛出生時全身接近雪白，隨着長大會漸漸顯現出迷人的深色重點！</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article id="blue-point" class="color-guide-card color-card-blue">
+            <div class="color-card-top">
+              <span class="color-index">02</span>
+              <span class="color-swatch" aria-hidden="true"></span>
+            </div>
+            <figure class="color-photo">
+              <img src="assets/siamese/blue-point.jpg" alt="藍重點暹羅貓" loading="eager" />
+            </figure>
+            <h3>💙 藍重點 Blue Point</h3>
+            <p class="color-card-subtitle">高冷斯文的冷灰藍</p>
+            <dl class="color-detail-list">
+              <div>
+                <dt>一句話介紹</dt>
+                <dd>灰調中帶着柔和藍光，暹羅界的「高冷文青」！</dd>
+              </div>
+              <div>
+                <dt>視覺特徵</dt>
+                <dd>身體呈現冷奶油白，重點部位則是石板灰藍色。即使冬天變色，依然維持溫柔優雅的灰藍調，不會變得很黑。</dd>
+              </div>
+              <div>
+                <dt>肉墊與鼻頭</dt>
+                <dd>石板灰色或鉛灰色。</dd>
+              </div>
+              <div>
+                <dt>性格特點</dt>
+                <dd>氣質溫和、斯文細致，色調清冷耐看，越看越有質感！</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article id="lilac-point" class="color-guide-card color-card-lilac">
+            <div class="color-card-top">
+              <span class="color-index">03</span>
+              <span class="color-swatch" aria-hidden="true"></span>
+            </div>
+            <figure class="color-photo">
+              <img src="assets/siamese/lilac-point.jpg" alt="紫重點色暹羅貓" loading="eager" />
+            </figure>
+            <h3>💜 紫重點色 Lilac Point</h3>
+            <p class="color-card-subtitle">仙氣飄飄的粉灰色</p>
+            <dl class="color-detail-list">
+              <div>
+                <dt>一句話介紹</dt>
+                <dd>暹羅界的「精靈公主」，帶有夢幻粉紫光澤的淡雅色調。</dd>
+              </div>
+              <div>
+                <dt>視覺特徵</dt>
+                <dd>這是藍重點色的稀釋版，重點色呈現淡淡的「粉灰色」（Lilac），身體為清透的冷白色，氣質極度高貴優雅，是許多發燒友眼中的夢幻極品。</dd>
+              </div>
+              <div>
+                <dt>肉墊與鼻頭</dt>
+                <dd>可愛的薰衣草粉紫色。</dd>
+              </div>
+              <div>
+                <dt>魅力所在</dt>
+                <dd>淡雅、細膩，擁有一種難以言喻的貴族仙氣。</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article id="tabby-point" class="color-guide-card color-card-tabby">
+            <div class="color-card-top">
+              <span class="color-index">04</span>
+              <span class="color-swatch" aria-hidden="true"></span>
+            </div>
+            <figure class="color-photo">
+              <img src="assets/siamese/tabby-point.png" alt="虎斑色暹羅貓" loading="eager" />
+            </figure>
+            <h3>🐯 虎斑色 Tabby Point</h3>
+            <p class="color-card-subtitle">野性與甜美兼備</p>
+            <dl class="color-detail-list">
+              <div>
+                <dt>一句話介紹</dt>
+                <dd>額頭自帶「M」字幸運標記的萌酷小獵豹！</dd>
+              </div>
+              <div>
+                <dt>視覺特徵</dt>
+                <dd>保留了經典重點色結構，但耳朵、四肢與尾巴帶有清晰的虎斑條紋，眼睛四周還有自然的花紋「眼線」。</dd>
+              </div>
+              <div>
+                <dt>魅力所在</dt>
+                <dd>既有野生小獵豹的酷帥，又有暹羅貓超黏人的溫柔性格，反差萌爆燈！</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article id="chocolate-point" class="color-guide-card color-card-chocolate">
+            <div class="color-card-top">
+              <span class="color-index">05</span>
+              <span class="color-swatch" aria-hidden="true"></span>
+            </div>
+            <figure class="color-photo">
+              <img src="assets/siamese/chocolate-point.jpg" alt="朱古力重點色暹羅貓" loading="eager" />
+            </figure>
+            <h3>🍫 朱古力重點色 Chocolate Point</h3>
+            <p class="color-card-subtitle">溫暖的甜點色</p>
+            <dl class="color-detail-list">
+              <div>
+                <dt>一句話介紹</dt>
+                <dd>如絲般柔滑，暖心又甜蜜的溫暖棕色調。</dd>
+              </div>
+              <div>
+                <dt>視覺特徵</dt>
+                <dd>身體呈現偏象牙白，臉部與四肢重點色為溫和的「奶朱古力色」，與海豹色那種深咖啡黑不同，它看起來更柔和、更甜美。</dd>
+              </div>
+              <div>
+                <dt>肉墊與鼻頭</dt>
+                <dd>粉棕色，透著溫暖的感覺。</dd>
+              </div>
+              <div>
+                <dt>魅力所在</dt>
+                <dd>色彩質感極佳，是一種讓人想親近的甜美色系。</dd>
+              </div>
+            </dl>
+          </article>
         </div>
       </section>
 
@@ -323,80 +544,103 @@
         <div class="section-inner support-layout">
           <div class="support-copy">
             <p class="eyebrow">Guarantee & Support</p>
-            <h2>Meow Me Cattery 保障與支援</h2>
+            <h2>Meow Me Cattery 最強安心保障<span class="support-title-subline">用愛與專業，守護每個小生命</span></h2>
             <p class="lead">
-              品質、健康、售後及醫療支援清晰列明，方便家長了解接貓前後的保障安排。
+              對奶媽嚟講，保障從來唔只係一張冷冰冰嘅合約，而係我哋對每隻親手接生、抱喺懷裏長大嘅貓 BB，最真誠嘅承諾。由源頭健康到一生嘅後盾，我哋用最高標準，只為比你同毛孩最安心嘅陪伴。
             </p>
           </div>
 
           <div class="support-content" aria-label="保障與支援資料">
-            <article class="support-hero-card">
-              <p class="eyebrow">Since 2021</p>
-              <h3>2021年開業｜多年豐富繁育經驗</h3>
-              <p>專心只培育優質精緻暹羅貓</p>
+            <article class="support-video-card" aria-label="保障與支援影片版">
+              <div class="support-video-copy">
+                <p class="eyebrow">唔想睇字就睇影片版啦!</p>
+                <h3>保障與支援影片版</h3>
+                <p>全港首間帶暹羅貓爸爸媽媽做 AMVET 遺傳病基因測試，並全數通過檢查。</p>
+              </div>
+              <video class="support-video" controls loop playsinline preload="metadata" poster="assets/meowme-brand.jpeg" aria-label="Meow Me Cattery 保障與支援影片">
+                <source src="videos/hero-logo.mp4" type="video/mp4" />
+                你的瀏覽器暫時未能播放此影片。
+              </video>
             </article>
+
+            <div class="support-card-heading">
+              <p class="eyebrow">Core Guarantees</p>
+              <h3>最強安心保障</h3>
+            </div>
 
             <div class="support-card-grid">
               <article class="support-card">
                 <span class="support-index">01</span>
-                <h3>品質嚴格把關</h3>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-01-genetics-check.jpg" alt="暹羅貓基因健康檢測示意圖" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🧬</span><span>AMVET 基因把關（愛佢，就由源頭守護）</span></h3>
                 <ul>
-                  <li>全部貓咪香港出世 店主親自接生</li>
-                  <li>貓咪父母通過遺傳病篩查</li>
-                  <li>每隻貓咪附送完整成長片段</li>
+                  <li><strong>全港首間：</strong>帶暹羅貓爸媽做各項 <span class="support-highlight">AMVET 遺傳病基因檢測</span></li>
+                  <li><strong>安心源頭：</strong>由根源阻截遺傳病，確保每隻貓 BB 都<span class="support-highlight">健健康康陪伴你一輩子</span></li>
                 </ul>
               </article>
 
               <article class="support-card">
                 <span class="support-index">02</span>
-                <h3>健康層層把關</h3>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-02-vet-care.jpg" alt="暹羅貓接受專業獸醫檢查" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🩺</span><span>專屬獸醫團隊（做毛孩最堅實嘅後盾）</span></h3>
                 <ul>
-                  <li>離舍前專業獸醫健康檢視</li>
-                  <li>免費包3針疫苗+專屬晶片</li>
-                  <li>長達365日合約 保障全面周全</li>
+                  <li><strong>終身護航：</strong>享有<span class="support-highlight">免診金</span>及各種<span class="support-highlight">終身醫療協助與優惠</span>，等家長養貓無後顧之憂，<span class="support-highlight">減輕醫療負擔</span></li>
+                  <li><strong>實質保障：</strong>離舍前<span class="support-highlight">免費全面體檢</span>、打齊 <span class="support-highlight">3 針疫苗與晶片</span>，更享有 <span class="support-highlight">365 日合約健康保障</span></li>
                 </ul>
               </article>
 
               <article class="support-card">
                 <span class="support-index">03</span>
-                <h3>全方位貼心售後</h3>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-03-socialization.jpg" alt="幼貓家庭式照顧與社會化訓練" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🐾</span><span>完整社會化訓練（用心培育親人好性格）</span></h3>
                 <ul>
-                  <li>24小時一對一專屬諮詢</li>
-                  <li>免費專業新手養貓教學</li>
-                  <li>一暫式貼心跟進</li>
+                  <li><strong>親手撫養：</strong>店主<span class="support-highlight">親自接生</span>，由第一天起<span class="support-highlight">抱喺懷裏餵奶照顧</span>，建立對人類極高嘅信任感</li>
+                  <li><strong>社會化養成：</strong><span class="support-highlight">嚴禁籠養</span>，喺純白乾淨嘅家庭環境自由長大，從小進行<span class="support-highlight">社會化訓練</span>，培育出膽大、<span class="support-highlight">極度痴人又愛撒嬌</span>嘅好性格</li>
                 </ul>
               </article>
 
               <article class="support-card">
                 <span class="support-index">04</span>
-                <h3>溫馨經營特色</h3>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-04-private-visit.jpg" alt="乾淨明亮的一對一私隱探訪空間" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🏠</span><span>一對一私隱探訪（像回到家一樣舒服）</span></h3>
                 <ul>
-                  <li>一人用心經營小店</li>
-                  <li>採用預約制到店參觀</li>
-                  <li>專屬獨立時間接待</li>
-                  <li>一對一詳細專業講解</li>
+                  <li><strong>專屬時段：</strong><span class="support-highlight">全預約制獨立溫馨空間</span>，等你可以無壓力、安心同貓 BB 互動</li>
+                  <li><strong>嚴謹衛生：</strong>每次探訪前後<span class="support-highlight">徹底消毒</span>，用心保護好每一個小毛孩嘅健康</li>
                 </ul>
               </article>
 
               <article class="support-card">
                 <span class="support-index">05</span>
-                <h3>貓貓敏感人士專屬方案</h3>
+                <figure class="support-card-visual support-card-visual-album">
+                  <img src="assets/support/strongest-05-growth-journal.jpg" alt="幼貓成長紀錄冊與照片更新" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">📱</span><span>24/7 透明成長日誌（陪伴貓 BB 成長）</span></h3>
                 <ul>
-                  <li>協助解決致敏來源</li>
-                  <li>專屬方案及指導</li>
-                  <li>協助永久解決過敏源煩惱</li>
+                  <li><strong>每日紀錄：</strong>預訂後<span class="support-highlight">每日傳送照片與影片</span>，等你可以遠端參與貓 BB 嘅成長點滴</li>
+                  <li><strong>留住溫馨：</strong>離舍時附送<span class="support-highlight">完整成長紀錄冊</span>，為你哋記錄下最寶貴嘅初見時光</li>
                 </ul>
               </article>
 
               <article class="support-card">
                 <span class="support-index">06</span>
-                <h3>專業健康守護</h3>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-06-family-support.jpg" alt="Meow Me Cattery 新手手冊" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🎓</span><span>新手與敏感家庭支援（一路相伴嘅承諾）</span></h3>
                 <ul>
-                  <li>獨有專業獸醫團隊</li>
-                  <li>提供終身輕/重症醫療協助</li>
-                  <li>專業後盾守護終身健康</li>
+                  <li><strong>一站式指導：</strong>提供<span class="support-highlight">新手手冊</span>、專屬課堂與 <span class="support-highlight">24 小時諮詢</span>，隨時為你解惑</li>
+                  <li><strong>敏感配套：</strong>提供<span class="support-highlight">貓毛敏感評估與環境改善建議</span>，讓愛無後顧之憂</li>
                 </ul>
               </article>
+
             </div>
 
             <div class="support-pill-grid" aria-label="保障與支援總結">
@@ -404,6 +648,42 @@
                 <span>我哋用最嚴謹嘅標準，只為將最好的暹羅貓，交予最愛他的你──成為彼此一生最溫柔的依靠。</span>
               </div>
             </div>
+
+            <section class="support-certificate-section support-authority-section" aria-labelledby="support-certificates-title">
+              <div class="support-certificate-heading">
+                <p class="eyebrow">CERTIFICATES &amp; QUALIFICATIONS</p>
+                <h3 id="support-certificates-title">🔬 國際權威認證 ｜ 專業資歷與基因檢測</h3>
+                <p>我哋堅持用最嚴謹嘅專業與科學，比貓貓最全面嘅保護。時間與證書，永遠係我哋最真誠嘅證明。</p>
+              </div>
+
+              <div class="support-authority-grid">
+                <article class="support-authority-card">
+                  <a class="support-authority-image" href="assets/support/pet-first-aid-certificate.jpg" target="_blank" rel="noopener" aria-label="查看英國 TQUK 國際寵物急救認證證書大圖">
+                    <img src="assets/support/pet-first-aid-certificate.jpg" alt="英國 TQUK 寵物急救及預防護理證書" />
+                  </a>
+                  <div class="support-authority-copy">
+                    <h4>📜 英國 TQUK 國際寵物急救認證</h4>
+                    <ul>
+                      <li>奶媽一開業就報讀課程，於 2022 年考獲英國 TQUK 認可《寵物急救及預防護理證書》</li>
+                      <li>具備專業急救與日常護理技巧，確保貓 BB 喺最安全、健康嘅環境下長大</li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="support-authority-card">
+                  <a class="support-authority-image" href="assets/support/amvet-dna-report.jpg" target="_blank" rel="noopener" aria-label="查看 AMVET DNA Analysis Report 大圖">
+                    <img src="assets/support/amvet-dna-report.jpg" alt="AMVET DNA Analysis Report 基因健康檢測報告" />
+                  </a>
+                  <div class="support-authority-copy">
+                    <h4>🧬 AMVET 基因健康檢測報告</h4>
+                    <ul>
+                      <li>全港首間帶貓爸媽做 AMVET 遺傳病基因篩查</li>
+                      <li>100% 阻截 PKD（腎病）、HCM（心臟病）及 PRA（眼疾）等先天缺陷</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </div>
       </section>
@@ -653,9 +933,9 @@
         <div class="section-inner contact-layout">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2>想了解暹羅小朋友，先 WhatsApp 預約</h2>
+            <h2>【遇見，屬於你的藍眼睛 】</h2>
             <p class="lead">
-              幼貓狀況會隨時間更新，建議先發訊息確認可見面時間、性格資料與到店安排。
+              無論你是想了解暹羅貓的獨特性格、交流「貓經」、看看寶貝們的日常生活，還是準備好親自來感受這份心動——我們都隨時在這裡，等著和你分享這份純粹的快樂。
             </p>
           </div>
           <div class="contact-grid">
