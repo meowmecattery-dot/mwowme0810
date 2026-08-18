@@ -25,7 +25,7 @@
     <script>
       document.documentElement.dataset.page = new URLSearchParams(window.location.search).get("page") || "home";
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260817-redpoint-white" />
+    <link rel="stylesheet" href="styles.css?v=20260818-about-order" />
     <style>
       .product-card {
         min-height: 0;
@@ -154,7 +154,17 @@
         <svg><use href="#icon-menu" /></svg>
       </button>
       <nav id="site-menu" class="site-nav" aria-label="主要導覽">
-        <a href="index.html?page=about">品牌故事</a>
+        <div class="nav-dropdown" data-nav-dropdown>
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+            品牌故事 <span aria-hidden="true">▾</span>
+          </button>
+          <div class="nav-dropdown-menu" aria-label="品牌故事子選單">
+            <a href="index.html?page=about#founder">奶媽的故事</a>
+            <a href="index.html?page=about#origin">初心與起點</a>
+            <a href="index.html?page=about#media">媒體報道及展覽</a>
+            <a href="index.html?page=about#story">名字的由來</a>
+          </div>
+        </div>
         <a href="index.html?page=support">最強安心保障</a>
         <a href="index.html?page=kittens">現有貓貓</a>
         <a href="index.html?page=siamese">暹羅貓花色圖鑑</a>
@@ -174,7 +184,7 @@
         <img class="hero-logo" src="assets/hero-cattery-room.jpg" alt="Meow Me Cattery 貓舍環境" />
         <div class="hero-copy">
           <h1 id="hero-title"><span>Meow Me</span><span>Cattery</span></h1>
-          <p class="hero-kicker">香港首間暹羅貓專門店 <small>Since 2021</small></p>
+          <p class="hero-kicker">香港首間暹羅貓專門店 <small>Since 2020</small></p>
           <div class="hero-credentials" aria-label="Meow Me Cattery 認證與牌照資料">
             <p>全港首間專營暹羅貓專門店｜首間通過基因檢測繁育｜獨有獸醫團隊終身保障｜CFA/TICA <strong>雙認證</strong></p>
             <p class="hero-license">漁護署牌照號碼：110260 <small>💡 漁護署牌照號碼順序按獲批時間排列，數字越小，代表註冊歷史越悠久、資歷越深厚。</small></p>
@@ -304,7 +314,47 @@
       </section>
 
       <section id="about" class="section intro-band">
-        <div class="section-inner about-hero-grid compact-about">
+        <div id="origin" class="section-inner about-story-feature about-origin-section">
+          <div class="about-story-feature-copy">
+            <p class="eyebrow">Origin</p>
+            <h2>初心與起點</h2>
+            <p class="lead">Meow Me Cattery 嘅故事，始於 2020 年 3 月。</p>
+            <p>
+              翻開社交媒體嘅「當年今日」回顧，一張張 2020 年 3 月就已經發布嘅舊相片與貼文，清清楚楚記錄住我哋由第一日開始為貓 BB 搵家長嘅過程。時間同社交媒體嘅真實記錄，就係最好嘅證明。
+            </p>
+            <p>
+              早喺成立貓舍之前，暹羅貓就已經係我生活中不可缺少嘅家人。深深體會過佢哋好似小狗一樣咁黐人、咁全心全意信任人，所以我哋由 2020 年第一日開始，就堅持喺屋企無籠散養，等每隻貓 BB 自由自在地長大。
+            </p>
+            <p>
+              由我親手餵奶嘅日常，到為咗毛孩健康不斷提升專業標準，每一張相片背後，都係由 2020 年累積至今、家長對我哋最真實嘅信任。
+            </p>
+          </div>
+          <figure class="about-origin-photo">
+            <img src="assets/about/origin-facebook-2020.jpg" alt="Meow Me Cattery 2020 年 3 月 Facebook 貼文截圖" />
+          </figure>
+        </div>
+
+        <div id="story" class="section-inner about-name-story">
+          <p class="eyebrow">The Story of Meow Me</p>
+          <h2>名字的由來</h2>
+          <div class="about-name-copy">
+            <p>成日都有人問奶媽，點解貓舍要叫 Meow Me？</p>
+            <p>
+              其實喺貓貓嘅世界入面，大個咗嘅貓好少會靠喵喵叫溝通；佢哋會發出「Meow」，通常只係專屬於對人嘅信任、撒嬌同呼喚。
+            </p>
+            <p>
+              每一隻貓 BB 出世，第一聲細細粒嘅叫聲，都係喺度搵緊依靠。對身為奶媽嘅我（Me）嚟講，嗰一聲「Meow」，就係一份好厚好重嘅信任，亦係我願意用晒全副心機、專業同愛去照顧佢一世嘅起點。
+            </p>
+            <p>Meow Me 想表達嘅，其實就係兩粒心最純粹嘅呼應：</p>
+            <p>🐾 Meow（貓貓嘅呼喚）：佢用一聲「Meow」，交出咗成個人生嘅天真同陪伴；</p>
+            <p>❤️ Me（你同我嘅承諾）：而剛好係「你（Me）」聽見兼停低腳步，應承咗畀佢一個一世唔離唔棄嘅屋企。</p>
+            <p>
+              我哋唔單止係一間貓舍，更係一個見證愛同緣分嘅地方。當佢對住你輕輕叫一聲「Meow」，希望你就是那個可以等佢安心痴住一世嘅「Me」。
+            </p>
+          </div>
+        </div>
+
+        <div id="founder" class="section-inner about-hero-grid compact-about">
           <div class="about-hero-copy">
             <p class="eyebrow">品牌故事</p>
             <h2>《因為極致喜愛，所以一輩子專注》</h2>
@@ -333,7 +383,7 @@
           </figure>
         </div>
 
-        <div class="section-inner about-media-section">
+        <div id="media" class="section-inner about-media-section">
           <div class="about-media-heading">
             <p class="eyebrow">Media Features</p>
             <h3>媒體訪問及報道</h3>
@@ -596,7 +646,7 @@
               <div class="support-video-copy">
                 <p class="eyebrow">唔想睇字就睇影片版啦!</p>
                 <h3>保障與支援影片版</h3>
-                <p>全港首間帶暹羅貓爸爸媽媽做 AMVET 遺傳病基因測試，並全數通過檢查。</p>
+                <p>全港首間帶暹羅貓爸爸媽媽做 AMVET 遺傳病基因測試，並全數通過心臟：HCM 肥厚性心肌病、眼睛：PRA 漸進性視網膜萎縮、腎臟：PKD 多囊性腎病等等，完成多項檢測。</p>
               </div>
               <video class="support-video" controls loop playsinline preload="metadata" poster="assets/meowme-brand.jpeg" aria-label="Meow Me Cattery 保障與支援影片">
                 <source src="videos/hero-logo.mp4" type="video/mp4" />
@@ -682,6 +732,30 @@
                 </ul>
               </article>
 
+              <article class="support-card">
+                <span class="support-index">07</span>
+                <figure class="support-card-visual support-card-visual-daycare">
+                  <img src="assets/support/strongest-07-daycare-room.jpg" alt="回娘家專屬安心暫托獨立房間" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🏠</span><span>「回娘家」專屬安心暫托支援（獨立房間・出遊零擔憂）</span></h3>
+                <ul>
+                  <li><strong>獨立專屬房間住宿：</strong>絕不使用狹窄籠位！提供毛孩<span class="support-highlight">100呎獨立大房間</span>，活動空間寬敞，保障衛生與安全。</li>
+                  <li><strong>熟悉環境零應激：</strong>返到從小長大嘅熟悉環境，由最清楚 BB 性格嘅奶媽<span class="support-highlight">親自一對一照料</span>，徹底杜絕傳統貓宿嘅分離焦慮與壓力。</li>
+                </ul>
+              </article>
+
+              <article class="support-card">
+                <span class="support-index">08</span>
+                <figure class="support-card-visual">
+                  <img src="assets/support/strongest-08-spa-grooming-card.jpg" alt="專業 SPA 水療美容禮遇暹羅貓水療相" loading="lazy" />
+                </figure>
+                <h3><span class="support-card-icon" aria-hidden="true">🛁</span><span>專業 SPA 水療美容禮遇（TQUK認證・頂級低敏洗護）</span></h3>
+                <ul>
+                  <li><strong>日韓頂級洗護品牌：</strong>嚴選韓國 HYPONIC 及日本 Animal Ayurveda 草本泥等<span class="support-highlight">頂級低敏洗護水療產品</span>，深層潔淨毛孔、滋養毛孩絲滑毛質。</li>
+                  <li><strong>TQUK 國際認證護理：</strong>由持證專業減壓手法進行細緻護理，給毛孩最安心嘅<span class="support-highlight">沙龍級享受</span>。</li>
+                </ul>
+              </article>
+
             </div>
 
             <div class="support-pill-grid" aria-label="保障與支援總結">
@@ -719,7 +793,7 @@
                     <h4>🧬 AMVET 基因健康檢測報告</h4>
                     <ul>
                       <li>全港首間帶貓爸媽做 AMVET 遺傳病基因篩查</li>
-                      <li>100% 阻截 PKD（腎病）、HCM（心臟病）及 PRA（眼疾）等先天缺陷</li>
+                      <li>100% 阻截 PKD（腎病）、HCM（心臟病）及 PRA（眼疾）等等多項排查</li>
                     </ul>
                   </div>
                 </article>

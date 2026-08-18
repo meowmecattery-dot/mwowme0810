@@ -1,5 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
+const navDropdowns = document.querySelectorAll("[data-nav-dropdown]");
 const cart = [];
 const currentPage = document.documentElement.dataset.page || "home";
 const shopPassword = "mmc2021";
@@ -487,6 +488,25 @@ function closePaymentModal() {
 }
 
 if (navToggle && siteNav) {
+  const closeSiteNav = () => {
+    siteNav.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("menu-open");
+    navDropdowns.forEach((dropdown) => {
+      dropdown.classList.remove("is-open");
+      dropdown.querySelector(".nav-dropdown-toggle")?.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  navDropdowns.forEach((dropdown) => {
+    const button = dropdown.querySelector(".nav-dropdown-toggle");
+    button?.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isOpen = dropdown.classList.toggle("is-open");
+      button.setAttribute("aria-expanded", String(isOpen));
+    });
+  });
+
   navToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
@@ -494,10 +514,31 @@ if (navToggle && siteNav) {
   });
 
   siteNav.addEventListener("click", (event) => {
-    if (event.target instanceof HTMLAnchorElement) {
-      siteNav.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("menu-open");
+    const link = event.target.closest("a");
+    if (link) {
+      const targetUrl = new URL(link.href);
+      const currentUrl = new URL(window.location.href);
+      const isSamePageAnchor =
+        targetUrl.pathname === currentUrl.pathname &&
+        targetUrl.search === currentUrl.search &&
+        targetUrl.hash;
+
+      if (isSamePageAnchor) {
+        const target = document.querySelector(targetUrl.hash);
+        if (target) {
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.pushState(null, "", targetUrl.hash);
+        }
+      }
+
+      closeSiteNav();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!siteNav.contains(event.target) && !navToggle.contains(event.target)) {
+      closeSiteNav();
     }
   });
 }
