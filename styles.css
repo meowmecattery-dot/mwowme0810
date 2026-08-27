@@ -3839,3 +3839,100 @@ figcaption,
     box-sizing: border-box;
   }
 }
+
+@media (max-width: 768px) {
+  html[data-page="support"],
+  html[data-page="support"] body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html[data-page="support"] main,
+  html[data-page="support"] #support,
+  html[data-page="support"] #support > .section-inner {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  html[data-page="support"] #support > .section-inner {
+    margin-inline: 0;
+    padding-inline: 16px;
+  }
+
+  html[data-page="support"] #support * {
+    max-width: 100%;
+  }
+
+  html[data-page="support"] #support img,
+  html[data-page="support"] #support video,
+  html[data-page="support"] #support iframe,
+  html[data-page="support"] #support canvas,
+  html[data-page="support"] #support svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  html[data-page="support"] #support .support-top-grid,
+  html[data-page="support"] #support .support-content,
+  html[data-page="support"] #support .support-video-card,
+  html[data-page="support"] #support .support-category-tabs,
+  html[data-page="support"] #support .support-card-grid,
+  html[data-page="support"] #support .support-authority-grid,
+  html[data-page="support"] #support .support-cta-panel,
+  html[data-page="support"] #support .trust-logo-strip,
+  html[data-page="support"] #support .trust-logo-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  html[data-page="support"] #support .trust-logo-badge,
+  html[data-page="support"] #support .support-category-tabs a,
+  html[data-page="support"] #support .support-cta-actions .button {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+  }
+
+  html[data-page="support"] #support .support-video {
+    width: min(100%, 300px);
+    max-height: min(62svh, 500px);
+    justify-self: center;
+  }
+
+  html[data-page="support"] #support .support-card,
+  html[data-page="support"] #support .support-authority-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  html[data-page="support"] #support .support-summary-pill {
+    width: 100%;
+    min-width: 0;
+  }
+
+  html[data-page="support"] #support .support-summary-pill span {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+  }
+
+  html[data-page="support"] #support p,
+  html[data-page="support"] #support li,
+  html[data-page="support"] #support h2,
+  html[data-page="support"] #support h3,
+  html[data-page="support"] #support h4,
+  html[data-page="support"] #support span,
+  html[data-page="support"] #support strong {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
