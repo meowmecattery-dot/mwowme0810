@@ -23,9 +23,13 @@
     <meta property="og:url" content="https://meowmecattery.com/" />
     <meta property="og:type" content="website" />
     <script>
-      document.documentElement.dataset.page = new URLSearchParams(window.location.search).get("page") || "home";
+      const routePageMap = {
+        "/support": "support",
+      };
+      const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
+      document.documentElement.dataset.page = new URLSearchParams(window.location.search).get("page") || routePageMap[normalizedPath] || "home";
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260827-certificate-crop-fix" />
+    <link rel="stylesheet" href="styles.css?v=20260827-support-anchor-route-fix" />
     <style>
       .product-card {
         min-height: 0;
@@ -48,7 +52,7 @@
         padding: 12px;
       }
     </style>
-    <script src="script.js?v=20260827-anchorfix" defer></script>
+    <script src="script.js?v=20260827-support-anchor-route-fix" defer></script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
         window.setTimeout(() => {
@@ -203,10 +207,10 @@
           <div class="trust-logo-strip hero-trust-strip" aria-label="國際權威信任徽章">
             <span class="trust-logo-heading">國際權威認可 ｜ 專業資歷與健康認證</span>
             <div class="trust-logo-list">
-              <a class="trust-logo-badge" href="index.html?page=support#trust-cfa"><img src="assets/support/badge-cfa-logo.png" alt="CFA 官方標誌" /><span>🏆 CFA 註冊及得獎貓舍</span></a>
-              <a class="trust-logo-badge" href="index.html?page=support#trust-tica"><img src="assets/support/badge-tica-logo.png" alt="TICA 官方標誌" /><span>🏆 TICA 註冊及得獎貓舍</span></a>
-              <a class="trust-logo-badge" href="index.html?page=support#trust-amvet"><img src="assets/support/badge-amvet-logo.png" alt="AMVET Biosciences 標誌" /><span>🧬 AMVET 基因健康檢測</span></a>
-              <a class="trust-logo-badge" href="index.html?page=support#trust-tquk"><img src="assets/support/badge-tquk-logo.png" alt="Training Qualifications UK 標誌" /><span>🇬🇧 TQUK 國際寵物急救認證</span></a>
+              <a class="trust-logo-badge" href="/support#trust-cfa"><img src="assets/support/badge-cfa-logo.png" alt="CFA 官方標誌" /><span>🏆 CFA 註冊及得獎貓舍</span></a>
+              <a class="trust-logo-badge" href="/support#trust-tica"><img src="assets/support/badge-tica-logo.png" alt="TICA 官方標誌" /><span>🏆 TICA 註冊及得獎貓舍</span></a>
+              <a class="trust-logo-badge" href="/support#trust-amvet"><img src="assets/support/badge-amvet-logo.png" alt="AMVET Biosciences 標誌" /><span>🧬 AMVET 基因健康檢測</span></a>
+              <a class="trust-logo-badge" href="/support#trust-tquk"><img src="assets/support/badge-tquk-logo.png" alt="Training Qualifications UK 標誌" /><span>🇬🇧 TQUK 國際寵物急救認證</span></a>
             </div>
           </div>
           <p class="hero-text">

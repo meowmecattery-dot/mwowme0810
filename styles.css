@@ -3746,3 +3746,96 @@ figcaption,
     object-position: top center;
   }
 }
+
+@media (max-width: 768px) {
+  #support {
+    overflow-x: hidden;
+  }
+
+  #support,
+  #support *,
+  #support *::before,
+  #support *::after {
+    box-sizing: border-box;
+  }
+
+  #support .section-inner.support-layout {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 16px;
+  }
+
+  #support .support-layout,
+  #support .support-top-grid,
+  #support .support-copy,
+  #support .support-content,
+  #support .support-card-grid,
+  #support .support-authority-grid,
+  #support .support-cta-panel,
+  #support .support-video-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #support .support-trust-strip {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  #support .support-trust-strip .trust-logo-list {
+    grid-template-columns: 1fr;
+    gap: 9px;
+    width: 100%;
+  }
+
+  #support .support-trust-strip .trust-logo-badge {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 42px minmax(0, 1fr);
+    justify-content: stretch;
+    padding: 9px 12px;
+  }
+
+  #support .support-trust-strip .trust-logo-badge span {
+    min-width: 0;
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #support p,
+  #support li,
+  #support dd,
+  #support h2,
+  #support h3,
+  #support h4,
+  #support .lead,
+  #support .support-title-subline,
+  #support .support-card,
+  #support .support-card *,
+  #support .support-authority-card,
+  #support .support-authority-card *,
+  #support .support-video-copy,
+  #support .support-video-copy *,
+  #support .support-cta-panel,
+  #support .support-cta-panel * {
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  #support .lead,
+  #support .support-copy p,
+  #support .support-card p,
+  #support .support-card li,
+  #support .support-authority-copy li,
+  #support .award-callout p {
+    box-sizing: border-box;
+  }
+}

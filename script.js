@@ -48,7 +48,7 @@ const scrollToHashTarget = (behavior = "auto") => {
 };
 
 window.addEventListener("load", () => {
-  [80, 350, 800].forEach((delay) => {
+  [80, 350, 800, 1300, 1800].forEach((delay) => {
     window.setTimeout(() => scrollToHashTarget("auto"), delay);
   });
 });

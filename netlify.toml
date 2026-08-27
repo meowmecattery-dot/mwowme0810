@@ -2,6 +2,16 @@
   publish = "."
   command = ""
 
+[[redirects]]
+  from = "/support"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/support/"
+  to = "/support"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]
