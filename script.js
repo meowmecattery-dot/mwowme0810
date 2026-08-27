@@ -25,6 +25,34 @@ const shopPasswordForm = document.querySelector("[data-shop-password-form]");
 const shopPasswordInput = document.querySelector("[data-shop-password-input]");
 const shopPasswordError = document.querySelector("[data-shop-password-error]");
 
+const scrollToElement = (target, behavior = "auto") => {
+  const headerHeight = document.querySelector(".site-header")?.getBoundingClientRect().height || 0;
+  const top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 24;
+  window.scrollTo({ top: Math.max(0, top), behavior });
+};
+
+const scrollToHashTarget = (behavior = "auto") => {
+  if (!window.location.hash) return false;
+  let targetId = window.location.hash.slice(1);
+  try {
+    targetId = decodeURIComponent(targetId);
+  } catch (error) {
+    targetId = window.location.hash.slice(1);
+  }
+  const target = document.getElementById(targetId);
+  if (target) {
+    scrollToElement(target, behavior);
+    return true;
+  }
+  return false;
+};
+
+window.addEventListener("load", () => {
+  [80, 350, 800].forEach((delay) => {
+    window.setTimeout(() => scrollToHashTarget("auto"), delay);
+  });
+});
+
 const shopProducts = [
   {
     category: "nutrition",
@@ -527,7 +555,7 @@ if (navToggle && siteNav) {
         const target = document.querySelector(targetUrl.hash);
         if (target) {
           event.preventDefault();
-          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          scrollToElement(target, "smooth");
           history.pushState(null, "", targetUrl.hash);
         }
       }
