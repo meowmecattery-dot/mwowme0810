@@ -3,6 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16781335116"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16781335116');
+    </script>
+    <script>
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href*="wa.me"]');
+        if (link) {
+          gtag('event', 'conversion', {'send_to': 'AW-16781335116/BT6ICIyvr-kcEMy0-8E-'});
+        }
+      }, true);
+    </script>
     <title>Meow Me Cattery｜香港首間暹羅貓專門店</title>
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/favicon-48.png" />
