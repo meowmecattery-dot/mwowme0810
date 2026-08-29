@@ -763,6 +763,21 @@ h3 {
   white-space: normal;
 }
 
+.kitten-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid rgba(189, 116, 111, 0.28);
+  border-radius: 8px;
+  color: var(--brown);
+  background: linear-gradient(180deg, #fff7f4 0%, #f3e4d2 100%);
+  font-weight: 900;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(33, 31, 29, 0.08);
+}
+
 .adoption-process-section {
   margin-top: 24px;
   padding: clamp(26px, 4vw, 40px) clamp(16px, 3vw, 28px);
