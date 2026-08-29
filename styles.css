@@ -763,6 +763,74 @@ h3 {
   white-space: normal;
 }
 
+.adoption-process-section {
+  margin-top: 24px;
+  padding: clamp(26px, 4vw, 40px) clamp(16px, 3vw, 28px);
+  border: 1px solid rgba(189, 116, 111, 0.18);
+  border-radius: 8px;
+  background: #fffaf8;
+  box-shadow: 0 14px 44px rgba(33, 31, 29, 0.07);
+}
+
+.adoption-process-heading {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.adoption-process-heading span,
+.step-card span {
+  color: #b45309;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.adoption-process-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+}
+
+.adoption-process-heading p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.step-card {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid #f3d4ba;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 26px rgba(180, 83, 9, 0.08);
+}
+
+.step-card h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.step-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
 #origin,
 #story,
 #founder,
