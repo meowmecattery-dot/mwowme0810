@@ -2583,6 +2583,12 @@ h3 {
   background: linear-gradient(180deg, #fff 0%, #fff7f4 100%);
 }
 
+.product-empty-card {
+  min-height: 220px;
+  align-content: center;
+  border-style: dashed;
+}
+
 .product-image {
   display: grid;
   place-items: center;

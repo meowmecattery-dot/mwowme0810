@@ -220,16 +220,28 @@ const shopProducts = [
 
 const shopProductCategories = [
   {
+    id: "food",
+    label: "Food",
+    name: "主食糧罐",
+    description: "罐頭及幼貓乾糧，方便家長按日常主食需要選購。",
+  },
+  {
     id: "nutrition",
     label: "Nutrition",
     name: "營養保健",
     description: "益生菌、免疫力粉、牛磺酸等日常營養補充。",
   },
   {
-    id: "food",
-    label: "Food",
-    name: "主食糧罐",
-    description: "罐頭及幼貓乾糧，方便家長按日常主食需要選購。",
+    id: "daily",
+    label: "Daily Essentials",
+    name: "日常用品",
+    description: "飲水、清潔及生活小物等日常照顧用品，整理好後會陸續上架。",
+  },
+  {
+    id: "litter",
+    label: "Cat Litter",
+    name: "貓砂",
+    description: "貓砂、除味及清潔用品會按實際供應陸續更新。",
   },
   {
     id: "medical",
@@ -242,6 +254,13 @@ const shopProductCategories = [
     label: "Daycare",
     name: "專屬托兒所",
     description: "獨立整個房間托管，按寵物數量選擇每日方案。",
+    countLabel: "項服務",
+  },
+  {
+    id: "grooming",
+    label: "Grooming",
+    name: "貓貓美容",
+    description: "美容洗護及護理服務整理中，稍後會於此分類開放選購。",
     countLabel: "項服務",
   },
 ];
@@ -363,14 +382,12 @@ function renderShopProducts() {
   if (!productGrid) return;
 
   injectProductStyles();
-  const visibleCategories = shopProductCategories
-    .map((category) => {
-      return {
-        ...category,
-        products: shopProducts.filter((product) => product.category === category.id),
-      };
-    })
-    .filter((category) => category.products.length);
+  const visibleCategories = shopProductCategories.map((category) => {
+    return {
+      ...category,
+      products: shopProducts.filter((product) => product.category === category.id),
+    };
+  });
 
   if (productCategoryNav) {
     productCategoryNav.innerHTML = visibleCategories
@@ -393,12 +410,14 @@ function renderShopProducts() {
               <h3 id="product-category-${category.id}">${category.name}</h3>
               <p>${category.description}</p>
             </div>
-            <small>${products.length} ${category.countLabel || "件貨品"}</small>
+            <small>${products.length ? `${products.length} ${category.countLabel || "件貨品"}` : "即將上架"}</small>
           </div>
           <div class="product-category-grid">
-            ${products
-              .map(
-                (product) => `
+            ${
+              products.length
+                ? products
+                    .map(
+                      (product) => `
         <article class="product-card">
           <div class="product-image">
             <img src="${product.image}" alt="${product.alt}" loading="lazy" />
@@ -413,8 +432,17 @@ function renderShopProducts() {
           </button>
         </article>
       `,
-              )
-              .join("")}
+                    )
+                    .join("")
+                : `
+        <article class="product-card product-empty-card is-coming-soon">
+          <span class="product-type">${category.name}</span>
+          <h3>即將上架</h3>
+          <p>呢個分類貨品整理中，稍後可以直接喺呢度選購。</p>
+          <strong>Coming Soon</strong>
+        </article>
+      `
+            }
           </div>
         </section>
       `;
